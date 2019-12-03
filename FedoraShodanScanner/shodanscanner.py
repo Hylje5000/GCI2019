@@ -2,7 +2,8 @@ from shodan import Shodan
 import os
 import socket
 
-api = Shodan('Vdx6BDORRVFNQVbSzQHpsahvRdkt8Alz')
+apikey = input("Input your Shodan API-key")
+api = Shodan(apikey)
 #titlebar
 def titlebar():
     os.system('clear')
